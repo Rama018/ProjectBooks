@@ -1,0 +1,10 @@
+﻿@*@using ProjectBooks.Models.ViewModel;
+@model AuthorBookVM
+
+<h2>Books by @Model.author.Name</h2>
+<ul>
+    @foreach (var book in Model.books)
+    {
+        <li>@book.Name</li>
+    }
+</ul>*@
